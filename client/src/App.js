@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Form from "./components/Form";
 
 const App = () => {
   return (
@@ -13,7 +14,9 @@ const App = () => {
       </div>
 
       <div className='columns is-centered'>
-        <div className='column'>FORM</div>
+        <div className='column'>
+          <Form />
+        </div>
         <div className='column'>TODOS</div>
       </div>
     </Fragment>
