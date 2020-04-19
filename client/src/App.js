@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import Form from "./components/Form";
+import TodoList from "./components/TodoList";
 
 const App = () => {
   return (
@@ -17,7 +18,9 @@ const App = () => {
         <div className='column'>
           <Form />
         </div>
-        <div className='column'>TODOS</div>
+        <div className='column'>
+          <TodoList />
+        </div>
       </div>
     </Fragment>
   );
