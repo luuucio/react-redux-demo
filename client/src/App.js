@@ -1,10 +1,22 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 const App = () => {
   return (
-    <div>
-      <h1 className='is-size-1 has-text-info has-text-centered'>Start here</h1>
-    </div>
+    <Fragment>
+      <div className='hero is-primary has-text-centered'>
+        <div className='hero-body'>
+          <div className='container'>
+            <h1 className='title'>React {"&"} Redux Demo</h1>
+            <h2 className='subtitle'>(with a little help of JSON-Server)</h2>
+          </div>
+        </div>
+      </div>
+
+      <div className='columns is-centered'>
+        <div className='column'>FORM</div>
+        <div className='column'>TODOS</div>
+      </div>
+    </Fragment>
   );
 };
 
