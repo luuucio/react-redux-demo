@@ -34,6 +34,11 @@ const Form = () => {
             />
           </div>
         </div>
+        <div className='columns is-centered' style={{ margin: "30px" }}>
+          <div className='control'>
+            <button className='button is-light '>Cancel</button>
+          </div>
+        </div>
       </form>
     </div>
   );
