@@ -97,3 +97,49 @@ git init
 git add .
 git commit -m "Initial commit"
 ```
+
+# Redux Implementation
+
+## Step 1 - Create the rootReducer
+
+Create index.js in the reducers directory
+
+## Step 2 - Create the store
+
+Create store.js file in the src directory
+
+## Step 3 - Import the store in App.js
+
+Add these imports in the App.js
+
+```js
+import { Provider } from "react-redux";
+import store from "./store";
+```
+
+and wrap the returned tree with
+
+```js
+ <Provider store={store}>
+```
+
+## Step 4 - Create the action and the types
+
+Create types.js and todoActions.js in the actions folder
+
+## Step 5 - Create the reducer
+
+Create todoReducer.js in the reducers folder
+
+## Step 6 - Add the reducer to the rootReducer
+
+## Step 7 - Add Redux to the component
+
+For example, in the TodoList component, add these imports:
+
+```js
+import { connect } from "react-redux";
+import { getTodos, setLoading } from "../actions/todoActions";
+```
+
+Add the mapStateToProps function and connect it to the component
